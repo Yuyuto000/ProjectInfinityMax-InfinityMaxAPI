@@ -1,4 +1,4 @@
-# Project:Infinity Max - Infinity Max API
+Project:Infinity Max - Infinity Max API
 =======
 ## Directory
 infinitymax-api/
@@ -34,7 +34,9 @@ infinitymax-api/
 │
 └── src/main/resources/
     ├── fabric.mod.json
-    └── META-INF/mods.toml
+    └── META-INF/mods.
+
+Features
 ======
 This template repository can be directly cloned to get you started with a new
 mod. Simply create a new repository cloned from this one, by following the
