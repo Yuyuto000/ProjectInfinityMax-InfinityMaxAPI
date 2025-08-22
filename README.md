@@ -1,6 +1,7 @@
 Project:Infinity Max - Infinity Max API
 =======
 ## Directory
+```
 infinitymax-api/
 ├── build.gradle / gradle.properties / gradlew
 ├── src/main/java/com/infinitymax/api/
@@ -35,7 +36,7 @@ infinitymax-api/
 └── src/main/resources/
     ├── fabric.mod.json
     └── META-INF/mods.
-
+```
 Features
 ======
 This template repository can be directly cloned to get you started with a new
