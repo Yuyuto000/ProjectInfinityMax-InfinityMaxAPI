@@ -1,7 +1,41 @@
-
-Installation information
+# Project:Infinity Max - Infinity Max API
 =======
-
+## Directory
+infinitymax-api/
+├── build.gradle / gradle.properties / gradlew
+├── src/main/java/com/infinitymax/api/
+│   ├── ProjectInfinityMaxAPI.java
+│   │
+│   ├── core/
+│   │   ├── EventBus.java
+│   │   ├── Event.java
+│   │   ├── LoaderHooks.java
+│   │   ├── NetworkHandler.java
+│   │   ├── RegistryHandler.java
+│   │   └── CompatLoader.java
+│   │
+│   ├── energy/
+│   │   ├── IEnergyStorage.java
+│   │   ├── EnergyManager.java
+│   │   ├── EnergyNetwork.java
+│   │   └── IEnergyCompat.java
+│   │
+│   ├── compat/
+│   │   ├── fabric/
+│   │   │   ├── FabricCompatInitializer.java
+│   │   │   └── FabricEnergyCompat.java
+│   │   │
+│   │   └── neoforge/
+│   │       ├── NeoForgeCompatInitializer.java
+│   │       └── NeoForgeEnergyCompat.java
+│   │
+│   └── util/
+│       └── LogHelper.java
+│
+└── src/main/resources/
+    ├── fabric.mod.json
+    └── META-INF/mods.toml
+======
 This template repository can be directly cloned to get you started with a new
 mod. Simply create a new repository cloned from this one, by following the
 instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
