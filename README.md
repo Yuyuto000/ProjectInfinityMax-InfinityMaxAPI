@@ -39,15 +39,15 @@ infinitymax-api/
 ```
 Features
 ======
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This mod is the core API of Project Infinity Max and is responsible for connecting each Infinity Max Mod and its add-on mods.
+This mod is a prerequisite mod. 
+Introducing only:
+**this mod does not add new items!** Also The true power of this mod will be realized when all other Infinity Max Mods are installed! Please be careful.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Supported loaders: NeoForge, Fabric
+(If you use Fabric, Fabric API is required.)
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Supported Minecraft Version 1.21.1
 
 Mapping Names:
 ============
@@ -60,3 +60,8 @@ Additional Resources:
 ==========
 Community Documentation: https://docs.neoforged.net/  
 NeoForged Discord: https://discord.neoforged.net/
+
+Developer Memos:
+======
+IDEでライブラリが足りなかったり、問題が発生したりした場合は、
+`gradlew --refresh-dependencies` を実行してローカルキャッシュをリフレッシュ
