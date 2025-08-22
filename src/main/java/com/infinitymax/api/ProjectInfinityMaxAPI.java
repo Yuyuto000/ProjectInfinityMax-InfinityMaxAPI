@@ -3,6 +3,7 @@ package com.infinitymax.api;
 import java.util.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import com.infinitymax.api.core.CompatLoader;
 
 /**
@@ -15,6 +16,7 @@ public class ProjectInfinityMaxAPI {
 
     private static final Map<String, Item> ITEM_REGISTRY = new HashMap<>();
     private static final Map<String, Block> BLOCK_REGISTRY = new HashMap<>();
+    private static final Map<String, BlockEntityType<?>> BLOCK_ENTITY_REGISTRY = new HashMap<>();
     private static final Map<String, List<Runnable>> EVENT_BUS = new HashMap<>();
     private static final Map<String, Object> SHARED_DATA = new HashMap<>();
 
@@ -26,14 +28,27 @@ public class ProjectInfinityMaxAPI {
         ITEM_REGISTRY.put(name, item);
     }
 
-    public static Item getItem(String name) { return ITEM_REGISTRY.get(name); }
+    public static Item getItem(String name) { 
+        return ITEM_REGISTRY.get(name); 
+    }
 
     public static void registerBlock(String name, Block block) {
         if (BLOCK_REGISTRY.containsKey(name)) return;
         BLOCK_REGISTRY.put(name, block);
     }
 
-    public static Block getBlock(String name) { return BLOCK_REGISTRY.get(name); }
+    public static Block getBlock(String name) { 
+        return BLOCK_REGISTRY.get(name); 
+    }
+
+    public static void registerBlockEntity(String name, BlockEntityType<?> type) {
+        if (BLOCK_ENTITY_REGISTRY.containsKey(name)) return;
+        BLOCK_ENTITY_REGISTRY.put(name, type);
+    }
+
+    public static BlockEntityType<?> getBlockEntity(String name) {
+        return BLOCK_ENTITY_REGISTRY.get(name);
+    }
 
     // -------------------
     // イベントシステム
